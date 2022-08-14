@@ -93,7 +93,7 @@ class LyricsExtract:
 
         return lyrics
 
-    def check_lyrics_file(self, artist, track, folder="output"):
+    def check_lyrics_file(self, artist, track, folder="output", streamlit_toggle=False):
         """Checks if the lyrics file exists on the user's computer."""
         file_name = f"{artist}「{track}」.txt"
         path = os.path.join(folder, file_name)
