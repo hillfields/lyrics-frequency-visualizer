@@ -2,7 +2,7 @@
 
 This app (made using [Streamlit](https://streamlit.io/)) takes a Spotify playlist containing Japanese songs and displays the frequencies of the most common words across all of the lyrics.
 
-**Note:**
+**Notes:**
 
 -   Since the code runs on your local machine, I do not collect any personal information from you.
 -   Some of the song lyrics that are scraped may be different from the ones you want, so you may need to go through the files to manually update these.
@@ -25,12 +25,11 @@ This app (made using [Streamlit](https://streamlit.io/)) takes a Spotify playlis
     -   If you don't have one or more of the following modules, then type `pip install <module>` in the terminal to install it.
     -   In addition to the `spacy` library, you will also need to download the Japanese pipeline (type the following in the terminal to download both `spacy` and the Japanese pipeline)
 
-```{=html}
-<!-- -->
 ```
-    $ pip install -U pip setuptools wheel
-    $ pip install -U spacy
-    $ python -m spacy download ja_core_news_sm
+$ pip install -U pip setuptools wheel
+$ pip install -U spacy
+$ python -m spacy download ja_core_news_sm
+```
 
 ## Steps
 
@@ -39,10 +38,9 @@ This app (made using [Streamlit](https://streamlit.io/)) takes a Spotify playlis
 3.  Download the libraries above as needed.
 4.  Open the terminal and type the following to run the app:
 
-```{=html}
-<!-- -->
 ```
-    $ streamlit run app.py
+$ streamlit run app.py
+```
 
 5.  Type in your Spotify client ID, client secret, and a [playlist ID](https://clients.caster.fm/knowledgebase/110/How-to-find-Spotify-playlist-ID.html) with Japanese songs into the corresponding fields.
 
